@@ -1,0 +1,349 @@
+@keyframes tawkMaxOpen {
+    0% {
+      opacity: 0;
+      transform: translate(0, 30px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translate(0, 0px);
+    }
+  }
+
+  @-moz-keyframes tawkMaxOpen {
+    0% {
+      opacity: 0;
+      transform: translate(0, 30px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translate(0, 0px);
+    }
+  }
+
+  @-webkit-keyframes tawkMaxOpen {
+    0% {
+      opacity: 0;
+      transform: translate(0, 30px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translate(0, 0px);
+    }
+  }
+
+  #v95khcmk8lv1712215301864.open {
+    animation: tawkMaxOpen 0.25s ease !important;
+  }
+
+  @keyframes tawkMaxClose {
+    from {
+      opacity: 1;
+      transform: translate(0, 0px);
+    }
+
+    to {
+      opacity: 0;
+      transform: translate(0, 30px);
+    }
+  }
+
+  @-moz-keyframes tawkMaxClose {
+    from {
+      opacity: 1;
+      transform: translate(0, 0px);
+    }
+
+    to {
+      opacity: 0;
+      transform: translate(0, 30px);
+    }
+  }
+
+  @-webkit-keyframes tawkMaxClose {
+    from {
+      opacity: 1;
+      transform: translate(0, 0px);
+    }
+
+    to {
+      opacity: 0;
+      transform: translate(0, 30px);
+    }
+  
+  }
+  .topbar{
+    background-color: #003d89;
+  }  
+
+  .facebook i {
+    color: #1877F2; /* Facebook Blue */
+  }
+  
+  .twitter i {
+    color: #1DA1F2; /* Twitter Blue */
+  }
+  
+  .instagram i {
+    color: #C13584; /* Instagram Gradient (starting point) */
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .youtube i {
+    color: #FF0000; /* YouTube Red */
+  }
+  
+  /* Optional hover effect */
+  a:hover i {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+  }
+  
+  .whatsapp-popup {
+    position: fixed;
+    right: 20px;
+    top: 85%;
+    z-index: 1000; /* Ensures it stays on top of other elements */
+  }
+  
+  .whatsapp-popup img {
+    width: 70px;
+    height: 70px;
+  }
+  #v95khcmk8lv1712215301864.closed {
+    animation: tawkMaxClose 0.25s ease !important;
+  }
+
+  .review-para {
+    text-align: left;
+    padding: 20px 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-top: 35px;
+  }
+
+  .review-para p {
+    font-size: 16px;
+    text-align: left;
+    min-height: 185px;
+  }
+
+  .review-para h4 {
+    font-size: 18px;
+    text-align: left;
+    margin: 5px 0 0;
+  }
+
+  .review-head h3 {
+    font-size: 28px;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar-toggler {
+    border-color: transparent;
+    /* Hide the button border */
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath stroke='blue' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
+  /* General Styles */
+  .pagetop {
+    padding: 15px 0;
+  }
+
+  .navbar-nav .nav-link {
+    color: #333;
+    padding: 8px 15px;
+    font-weight: 500;
+  }
+
+  /* Mobile Logo Styling */
+  .mobile-logo {
+    width: 100px;
+    /* Set width for mobile logo */
+  }
+
+  /* Hamburger Menu Button Styling */
+  .navbar-toggler {
+    border: none;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 114, 160, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    /* Blue color */
+  }
+
+  /* Navbar Links */
+  .navbar-nav .nav-link:hover {
+    color: #0072a0;
+    /* Hover color */
+  }
+
+  /* Mobile View (Small Screens) */
+  @media (max-width: 991.98px) {
+    .pagetop .container {
+
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .mystyle {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+    }
+
+    /* Align the logo and hamburger icon on the same row in mobile */
+    .logo.text-left.d-lg-none {
+      display: flex;
+      align-items: center;
+    }
+
+    /* Adjust navbar links alignment */
+    .navbar-nav {
+      text-align: center;
+    }
+
+    .navbar-collapse {
+      background-color: #fff;
+    }
+
+    /* Ensure the nav links take up full width on mobile */
+    .navbar-nav .nav-item {
+      width: 100%;
+    }
+  }
+
+  /* Cancel Button Styling */
+  .cancel-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10000;
+    /* Ensures the cancel button is above the menu */
+  }
+
+  .cancel-btn:hover {
+    color: #ff9900;
+    /* Change color on hover */
+  }
+
+  /* Hamburger Menu Styling */
+  #myhamburger ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-family: Arial, sans-serif;
+  }
+
+  #myhamburger ul li {
+    border-bottom: 1px solid #444;
+  }
+
+  #myhamburger ul li a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  /* Hover Effect */
+  #myhamburger ul li a:hover {
+    background-color: #0072a0;
+    /* Attractive blue color */
+    color: #fff;
+  }
+
+  /* Styling the menu items for better spacing */
+  .menu-item {
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .menu-item:hover {
+    background-color: #0072a0;
+    color: white;
+  }
+
+  #myhamburger {
+    background-color: #333;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    
+  }
+
+  #myhamburger ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  #myhamburger ul li {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  #myhamburger ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  #myhamburger ul li a:hover {
+    background-color: #3475f6;
+    color: white;
+  }
+.indshowroom{
+  background-color: #003d89;
+}
+.footer{
+  background-color: #003d89;
+}
+/* tricky*/
+.pagetop {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensures the header stays above other content */
+  background-color: white; /* Keeps the background consistent */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for better visibility */
+}
+
+.pagetop .navbar-toggler {
+  border: none; /* Optional: Removes border around the hamburger button */
+}
+
+@media (max-width: 992px) {
+  .pagetop {
+    padding: 10px 15px; /* Adjust padding for mobile view */
+  }
+  .pagetop .logo img {
+    width: 120px; /* Adjust logo size for better fit in mobile view */
+  }
+  .pagetop .navbar-nav {
+    margin: 0; /* Ensure menu aligns well in mobile */
+  }
+}

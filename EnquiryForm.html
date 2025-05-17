@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title> Enquiry Form</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+         integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- Bootstrap core CSS -->
+      <link href="ass/bootstrap.min.css" rel="stylesheet" />
+      <!-- Custom styles for this template -->
+      <link href="ass/custom.css" rel="stylesheet" />
+      <link href="ass/all.css" rel="stylesheet" />
+      <style>
+         .container {
+         width: auto;
+         margin: 0 auto;
+         }
+         #form-layouts-head {
+         width: 100%;
+         float: left;
+         padding: 65px 0;
+         margin-top: 1%;
+         }
+         .cover-box .ciptxt,
+         .textareaciptxt {
+         height: 42px;
+         width: 100%;
+         border: 0;
+         border-bottom: 1px solid #242731;
+         padding: 2px 15px;
+         margin-bottom: 18px !important;
+         background-color: transparent;
+         font-family: Gotham-Pro-Medium;
+         font-size: 12px;
+         color: #242731;
+         outline: 0;
+         }
+         input {
+         overflow: visible;
+         }
+         .info {
+         position: absolute;
+         bottom: 0;
+         font-family: Gotham-Pro-Regular;
+         }
+         .form-stepstd {
+         margin-top: 25px;
+         box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+         padding: 15px;
+         margin-bottom: 20px;
+         width: 100%;
+         }
+         .form-layout-content-section {
+         padding-left: 30px;
+         }
+         .pagetop {
+         position: sticky;
+         top: 0; /* Ensures the element sticks at the very top of the viewport */
+         z-index: 1000; /* Ensures the element stays above other elements */
+         background-color: white; /* Optional: Add a background color to avoid transparency issues */
+         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+         }
+      </style>
+      <link rel="stylesheet" href="index.css">
+   </head>
+   <body>
+      <div class="whatsapp-popup" id="whatsappPopup">
+         <a href="https://wa.me/7406774067" target="_blank">
+         <img src="logo/w1.png" alt="WhatsApp Logo">
+         </a>
+      </div>
+      <div class="topbar" style="height: 60px; display: flex; align-items: center">
+         <div class="container">
+            <div class="row">
+               <div class="col-12 d-block d-md-none">
+                  <div class="row">
+                     <div class="col-12 text-center">
+                        <h4>
+                           <div>
+                              <a href="tel:+917892238331"><i class="fa fa-phone-square"></i>&nbsp;+91-74067 74067</a>
+                           </div>
+                        </h4>
+                     </div>
+                     <div class="col-md-6 text-right">
+                        <div>
+                           <a href="https://www.facebook.com/profile.php?id=61559738700063" target="_blank" class="facebook">
+                           <i class="fab fa-facebook-square"></i>
+                           </a>
+                           <a href="https://twitter.com/PMotors70900" target="_blank" class="twitter">
+                           <i class="fab fa-twitter-square"></i>
+                           </a>
+                           <a href="https://www.instagram.com/" target="_blank" class="instagram">
+                           <i class="fab fa-instagram"></i>
+                           </a>
+                           <a href="https://www.youtube.com/channel/UCEdil13loTRVCkoSn10CDxw" target="_blank" class="youtube">
+                           <i class="fab fa-youtube-square"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-12 col-lg-12 text-right d-none d-md-block">
+                  Call Us:
+                  <a href="tel:+9174067 74067"><i class="fa fa-phone-square"></i>&nbsp;+91-74067 74067</a>
+                  <a href="tel:+9163669 75081"><i class="fa fa-phone-square"></i>&nbsp;+91-63669 75081</a>
+                  <a href="https://www.facebook.com/profile.php?id=61559738700063" target="_blank" class="facebook">
+                  <i class="fab fa-facebook-square"></i>
+                  </a>
+                  <a href="https://twitter.com/PMotors70900" target="_blank" class="twitter">
+                  <i class="fab fa-twitter-square"></i>
+                  </a>
+                  <a href="https://www.instagram.com/" target="_blank" class="instagram">
+                  <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="https://www.youtube.com/channel/UCEdil13loTRVCkoSn10CDxw" target="_blank" class="youtube">
+                  <i class="fab fa-youtube-square"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="pagetop">
+         <div class="container">
+            <div class="row align-items-center mystyle">
+               <div class="col-lg-2 d-flex justify-content-between align-items-center" style="width: 70%;">
+                  <!-- Desktop Logo -->
+                  <div class="logo text-left d-none d-lg-block">
+                     <a href="index.html">
+                     <img src="ass/logo/tata-logo.png" class="img-fluid main-logo"
+                        alt="Pixel Motors Marathahalli Hosur Road" />
+                     </a>
+                  </div>
+                  <!-- Mobile Logo -->
+                  <div class="logo text-left d-lg-none">
+                     <a href="#">
+                     <img src="/ass/logo.png" class="img-fluid mobile-logo" alt="Your Second Logo" style="width: 150px;" />
+                     </a>
+                  </div>
+                  <div class="logo text-left d-lg-none" style="margin-left:30px;width:190px">
+                     <a href="#">
+                     <img src="ass/logo/tata-logo.png" class="img-fluid mobile-logo" alt="Your Second Logo" style="width: 150px;" />
+                     </a>
+                  </div>
+               </div>
+               <div onclick="openHamburger()" class="col-lg-8 text-center" style="width: 10%;">
+                  <nav class="navbar navbar-expand-lg">
+                     <!-- Hamburger Button for Mobile Menu -->
+                     <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <!-- Collapsible Menu -->
+                     <div class="collapse navbar-collapse justify-content-center" id="navbarText">
+                        <ul class="navbar-nav topmenu">
+                           <li class="nav-item">
+                              <a class="nav-link" href="index.html">Home</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="about.html">About Us</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="services.html">Our Services</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="contact.html">Contact Us</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="./EnquiryForm.html" class="nav-link">Book Service</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+               <div class="col-lg-2 text-right d-none d-lg-block">
+                  <div class="logo text-right">
+                     <a href="#">
+                     <img src="ass/logo.png" class="img-fluid" alt="Your Second Logo" />
+                     </a>
+                     <p style="text-align: end; color: black; font-weight: 600">
+                        <a href="https://maps.app.goo.gl/AKyiHcGvo7kM63hh9" target="_blank">Bellandur </a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Hidden Hamburger Menu for Mobile -->
+      <div id="myhamburger" class="hamburger-menu"
+         style="display: none; position: fixed; top: 0; left: 0; height: 100%; width: 100%; background-color: #a7c3e2; color: #fff; z-index: 9999;">
+         <!-- Cancel Button -->
+         <button class="cancel-btn" onclick="closeHamburger()"
+            style="position: fixed; top: 0px; right: 20px; background: none; border: none; color: white; font-size: 24px; cursor: pointer;">
+            &times; <!-- "×" represents the close (cancel) icon -->
+         </button>
+         <ul style="padding: 0;  margin: 0; list-style-type: none; text-align: center; font-family: Arial, sans-serif;">
+            <li class="menu-item"><a href="index.html">Home</a></li>
+            <li class="menu-item"><a href="about.html">About Us</a></li>
+            <li class="menu-item"><a href="services.html">Our Services</a></li>
+            <li class="menu-item"><a href="contact.html">Contact Us</a></li>
+            <li class="menu-item"><a href="EnquiryForm.html">Book Service</a></li>
+         </ul>
+      </div>
+      <script>
+         let ham = document.getElementById('myhamburger');
+         
+         // Function to open the hamburger menu
+         function openHamburger() {
+           if (ham.style.display == "none") {
+             ham.style.display = "block";
+           } else {
+             ham.style.display = "none";
+           }
+         }
+         
+         // Function to close the hamburger menu when the cancel button is clicked
+         function closeHamburger() {
+           ham.style.display = "none";
+         }
+      </script>
+      <section id="form-layouts-head">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-4 col-md-12" style="height: 470px">
+                  <img style="width: 100%; max-width: 550px; height: 100%" loading="lazy" src="./ass/mechanic.webp" alt=""
+                     class="img-fluid forms-img-left" />
+               </div>
+               <div class="col-lg-8 col-md-12">
+                  <div class="form-layout-content-section">
+                     <h1>Service Booking Form</h1>
+                     <p>
+                        Fill the Details, and our team will contact you for further
+                        details
+                     </p>
+                     <!-- HTML Form -->
+                     <form id="test-drive-form-main" class="form-section" onsubmit="sendEmail(event)">
+                        <div class="form-stepstd" id="step-1td">
+                           <div class="row">
+                              <h3>Customer Information</h3>
+                              <div class="mainformbox">
+                                 <div>
+                                    <div class="form-group">
+                                       <label for="tname">Full Name:</label>
+                                       <input type="text" name="tname" id="tname" placeholder="Enter Full Name"
+                                          class="form-control ciptxt" required />
+                                    </div>
+                                    <div class="form-group">
+                                       <label for="temail">Email:</label>
+                                       <input type="email" name="temail" id="temailname" placeholder="Enter Email"
+                                          class="form-control ciptxt" />
+                                    </div>
+                                    <div class="form-group">
+                                       <label for="tphonenumber">Phone Number:</label>
+                                       <input type="text" name="tphonenumber" id="tphonenumber" placeholder="Enter Phone Number"
+                                          class="form-control ciptxt" required />
+                                    </div>
+                                    <!-- Date Field -->
+                                    <div class="form-group">
+                                       <label for="testDriveDate">Select Date:</label>
+                                       <input type="date" name="testDriveDate" id="testDriveDate" class="form-control ciptxt" />
+                                    </div>
+                                    <div class="form-group">
+                  <label for="bookingFor">Booking For:</label>
+                  <select name="bookingFor" id="bookingFor" name="bookingFor" class="form-control ciptxt" style="width: 100%" required>
+                     <option value="">Select Booking Type</option>
+                     <option value="1st Free Service">1st Free Service</option>
+                     <option value="2nd Free Service">2nd Free Service</option>
+                     <option value="3rd Free Service">3rd Free Service</option>
+                     <option value="Periodic Scheduled Maintenance">Periodic Scheduled Maintenance</option>
+                     <option value="Accidental Repair">Accidental Repair</option>
+                     <option value="Insurance Claim">Insurance Claim</option>
+                     <option value="Mechanical Repairs">Mechanical Repairs</option>
+                     <option value="A/c & Electrical">A/c & Electrical</option>
+                  </select>
+               </div>
+                                 </div>
+                                 <div>
+                                    <div class="form-group">
+                                       <label for="carModel">Car Model</label>
+                                       <select name="carModel" id="carModel" class="form-control ciptxt" style="width: 100%" required>
+                                          <option value="">Select Car Model</option>
+                                          <option value="Tata Nexon">Tata Nexon</option>
+                                          <option value="Tata Harrier">Tata Harrier</option>
+                                          <option value="Tata Safari">Tata Safari</option>
+                                          <option value="Tata Tiago">Tata Tiago</option>
+                                          <option value="Tata Altroz">Tata Altroz</option>
+                                          <option value="Tata Tigor">Tata Tigor</option>
+                                          <option value="Tata Punch">Tata Punch</option>
+                                          <option value="Tata Curvv">Tata Curvv</option>
+                                          <option value="Tata Hexa">Tata Hexa</option>
+                                       </select>
+                                    </div>
+                                    <div class="form-group">
+                                       <label for="vehicleNumber">Vehicle Registration Number:</label>
+                                       <input type="text" name="vehicleNumber" id="vehicleNumber" placeholder="Enter Vehicle Number"
+                                          class="form-control ciptxt" required />
+                                    </div>
+                                    <div class="form-group">
+                                       <label for="fuelType">Fuel Type:</label>
+                                       <select name="fuelType" id="fuelType" class="form-control ciptxt" style="width: 100%">
+                                          <option value="">Select Fuel Type</option>
+                                          <option value="Petrol">Petrol</option>
+                                          <option value="Diesel">Diesel</option>
+                                       </select>
+                                    </div>
+                                    <!-- Time Field -->
+                                    <div class="form-group">
+                                       <label for="testDriveTime">Select Time:</label>
+                                       <select name="testDriveTime" id="testDriveTime" class="form-control ciptxt">
+                                          <option value="">Select Time</option>
+                                          <option value="9:00 AM">9:00 AM</option>
+                                          <option value="9:30 AM">9:30 AM</option>
+                                          <option value="10:00 AM">10:00 AM</option>
+                                          <option value="10:30 AM">10:30 AM</option>
+                                          <option value="11:00 AM">11:00 AM</option>
+                                          <option value="11:30 AM">11:30 AM</option>
+                                          <option value="12:00 PM">12:00 PM</option>
+                                          <option value="12:30 PM">12:30 PM</option>
+                                          <option value="1:00 PM">1:00 PM</option>
+                                          <option value="1:30 PM">1:30 PM</option>
+                                          <option value="2:00 PM">2:00 PM</option>
+                                          <option value="2:30 PM">2:30 PM</option>
+                                          <option value="3:00 PM">3:00 PM</option>
+                                          <option value="3:30 PM">3:30 PM</option>
+                                          <option value="4:00 PM">4:00 PM</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                            
+                          <div style="margin-bottom: 15px; font-size: 15px; display: flex; align-items: flex-start; line-height: 1.5; color: #333;">
+                         <input 
+                    type="checkbox" 
+                    id="consent" 
+                    required 
+                    style="margin-right: 8px; margin-top: 2px; accent-color: #003d89; min-width: 15px;">
+  
+                  <label for="consent" style="cursor: pointer;">
+                   I Authorise Pixel Motors  & its representatives to contact me with updates and notifications via Email/SMS/What'sApp/Call. This will override DND/NDNC.
+                 </label>
+                 </div>
+                     <center><input type="submit" id="nextBtn" class="step-onetd btn btn-primary" value="Submit" /></center>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+ <script>
+   async function sendEmail(event) {
+      event.preventDefault();
+
+      // Collect form values
+      const formData = {
+         service_id: "service_xf7kqe7", // Replace with your EmailJS Service ID
+         template_id: "template_np13c83", // Replace with your EmailJS Template ID
+         user_id: "zBkaDjgkdVM7OnT6I", // Replace with your EmailJS User ID
+         template_params: {
+            tname: document.getElementById("tname").value,
+            temail: document.getElementById("temailname").value,
+            tphonenumber: document.getElementById("tphonenumber").value,
+            testDriveDate: document.getElementById("testDriveDate").value,
+            bookingFor: document.getElementById("bookingFor").value, // Ensure this matches form
+            carModel: document.getElementById("carModel").value,
+            vehicleNumber: document.getElementById("vehicleNumber").value,
+            fuelType: document.getElementById("fuelType").value,
+            testDriveTime: document.getElementById("testDriveTime").value
+         }
+      };
+
+      console.log("Sending data:", formData); // Debug log for verification
+
+      try {
+         const response = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
+            method: "POST",
+            headers: {
+               "Content-Type": "application/json"
+            },
+            body: JSON.stringify(formData)
+         });
+
+         if (response.ok) {
+            alert("Your form has been submitted successfully!");
+            document.getElementById("test-drive-form-main").reset();
+         } else {
+            alert("There was an error submitting the form. Please try again later.");
+         }
+      } catch (error) {
+         console.error("Error:", error);
+         alert("There was an error processing your request. Please try again.");
+      }
+   }
+</script>
+</body>
+</html>

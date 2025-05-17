@@ -1,0 +1,1079 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Muli|Roboto&display=swap);
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  
+  background-color: #fcfcfc;
+  font-size: 16px;
+}
+
+.navbar-toggler-icon {
+  background-image: url(../images/iconbar.png);
+  margin-top: 12px;
+}
+
+
+.topbar {
+  /*background:#e41242;*/
+  background: #307fe2;
+  color: #fff;
+  padding-top: 5px;
+}
+
+.topbar a {
+  color: #fff;
+}
+
+.topbar i.fa-phone-square {
+  font-size: 16px;
+}
+
+.topbar i {
+  font-size: 24px;
+  margin-left: 5px;
+}
+
+.mainformbox {
+  display: flex;
+  flex-direction: row; 
+  gap: 30px;
+  width: 480px;
+}
+@media screen and (max-width: 600px) {
+  .mainformbox {
+    flex-direction: column;
+    width: auto;
+  }
+}
+
+.pagetop {
+  color: #ccc;
+  border-top: solid 1px #307fe2;
+  border-bottom: solid 1px #307fe2;
+  background: #fcfcfc;
+}
+
+.pgtopinfo {
+  background-image: linear-gradient(#e41242, #98051e);
+}
+
+@media (min-width: 768px) {
+  .pgtopinfo {
+    padding-top: 12px;
+  }
+}
+
+.navbar-nav .nav-link {
+  color: #000;
+  text-transform: uppercase;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #e41242;
+}
+
+.navbar-nav .active .nav-link {
+  color: #e41242;
+}
+
+.navbar-text {
+  padding-top: 12px;
+  padding-bottom: 10px;
+}
+
+.navbar-text {
+  color: #000;
+}
+
+.navbar-text a {
+  color: #e41242;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.topmenu {
+  margin-top: 0px;
+}
+
+.topmenu .nav-link {
+  border-bottom: dashed 1px #cccccc;
+}
+
+@media (min-width: 768px) {
+  .topmenu .nav-link {
+    padding: 23px 0px 22px 0px;
+    border-bottom: 0px;
+  }
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 0px;
+  padding-left: 15px;
+}
+
+.logo {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.banner {
+  border-bottom: solid 1px #333;
+  background: #000;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  visibility: hidden;
+}
+
+@media (min-width: 1024px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    visibility: visible;
+  }
+}
+
+.indcontent {
+  color: #000;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-weight: normal;
+}
+
+.indcontent p strong {
+  color: #e41242;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .indcontent p strong {
+    font-weight: 600;
+  }
+}
+
+.indcontent h1 {
+  /*text-transform:uppercase;
+	color:#e41242;*/
+  color: #307fe2;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.indcontent p {
+  color: #333;
+  line-height: 1.75em;
+  margin-bottom: 25px;
+}
+
+.indcontent p a {
+  color: #e41242;
+  text-decoration: none;
+}
+
+.indcontent p a.indbutton {
+  color: #ffffff;
+}
+
+.indcontent h6 a {
+  color: #e41242;
+  text-decoration: none;
+}
+
+.parahead {
+  color: #e41242;
+  padding-bottom: 10px;
+}
+
+.indgallery {
+  background: #fff;
+  color: #fff;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.indgallery img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: solid 1px #999;
+  padding: 2px;
+}
+
+.indgallery h2 {
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  color: #307fe2;
+  margin-bottom: 20px;
+}
+
+.indshowroom {
+  background: #307fe2;
+}
+
+.indshowroom h2 {
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.aboutaddrs {
+  background: #fff;
+  border: solid 1px #ccc;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+
+.showrooms {
+  background: #e7e7e7;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.showrooms h3 {
+  font-size: 18px;
+  color: #e41242;
+  padding-bottom: 5px;
+}
+
+.showrooms p {
+  color: #333;
+  font-size: 14px;
+  padding-bottom: 0;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+
+.showrooms i {
+  color: #e41242;
+}
+
+.showrooms a {
+  color: #e41242;
+  text-decoration: none;
+}
+
+.showrooms a:hover {
+  color: #e41242;
+}
+
+.contactform{
+  background-color:#307fe2;
+padding: 10px;
+}
+.contactform .form-control {
+  border-radius: 0;
+  font-size: 14px;
+}
+
+.footerbox {
+  padding-top: 30px;
+  padding-bottom: 0;
+}
+
+.footer {
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background: #307fe2;
+  border-top: dotted 1px #fff;
+  font-size: 14px;
+}
+
+.footer p {
+  color: #fff;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footertab h3 {
+  font-size: 24px;
+  color: #fff;
+  padding-bottom: 10px;
+}
+
+.footertab p {
+  font-size: 16px;
+  color: #fff;
+}
+
+.footertab .smm a {
+  color: #fff;
+}
+
+.footul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footul li a {
+  width: 100%;
+  display: block;
+  float: left;
+  color: #fff;
+  padding: 5px 0;
+}
+
+.footshowroom {
+  padding-bottom: 15px;
+}
+
+.footshowroom a {
+  color: #fff;
+}
+
+.indcarcolors {
+  margin: 32px 0 0 0;
+  padding: 0;
+  list-style: none;
+  color: #333;
+}
+
+.indcarcolors li a {
+  color: #ccc;
+  display: block;
+  border: solid 0 #f1f1f1;
+  padding: 10px 0 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+  box-shadow: 0 0 2px #000;
+}
+
+.indcarcolors #c1 {
+  background: url(../images/c7.png);
+  color: #fff;
+}
+
+.indcarcolors #c2 {
+  background: url(../images/c6.png);
+  color: #fff;
+}
+
+.indcarcolors #c3 {
+  background: url(../images/c5.png);
+  color: #fff;
+}
+
+.indcarcolors #c4 {
+  background: url(../images/c4.png);
+  color: #fff;
+}
+
+.indcarcolors #c5 {
+  background: url(../images/c3.png);
+}
+
+.indcarcolors #c6 {
+  background: url(../images/c2.png);
+}
+
+.indcarcolors #c7 {
+  background: url(../images/c1.png);
+  color: #fff;
+}
+
+.smm {
+  margin-bottom: 0;
+}
+
+.smm i {
+  font-size: 24px;
+}
+
+.indbutton,
+.showrooms .indbutton {
+  color: #fff;
+  background: #307fe2;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.indbutton:hover,
+.showrooms .indbutton:hover {
+  color: #fff;
+  background: #333333;
+  text-decoration: none;
+}
+
+.indbutton i {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.red {
+  color: #b81e41;
+}
+
+.submit {
+  color: #fff;
+  background: black;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: larger;
+}
+.submit:hover{
+  background-color: rgb(66, 65, 65);
+  cursor: pointer;
+}
+
+.modal-header {
+  background: #307fe2;
+}
+
+.close,
+.modal-title {
+  color: #fff;
+}
+
+.modal-title span {
+  color: #000000;
+}
+
+.modal-body .form-control {
+  margin-bottom: 10px;
+}
+
+.msg {
+  color: #fff;
+  background: #e41242;
+}
+
+video {
+  width: 100%;
+  height: 75%;
+}
+
+.innernav {
+  background: #307fe2;
+}
+
+.seltoslogo {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.sticky + .content {
+  padding-top: 200px;
+}
+
+.sticky-top .navbar-nav .nav-link {
+  color: #ccc;
+  padding-right: 25px;
+}
+
+.sticky-top .navbar-nav .nav-link.active {
+  color: #307fe2;
+}
+
+.navbrand {
+  margin-right: 5%;
+}
+
+.page-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #fff;
+}
+
+.bg-light {
+  background: #eff1f2;
+}
+
+.redtitle {
+  text-transform: uppercase;
+  color: #e41242;
+  font-size: 1rem;
+}
+
+.page-section h1 {
+  font-size: 2.25rem;
+  font-family: "KIA", sans-serif;
+  font-weight: 600;
+}
+
+.sub-head {
+  font-size: 1.25rem;
+  font-family: "KIA", sans-serif;
+  font-weight: 600;
+}
+
+.page-section p {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5rem;
+  font-family: "KIA", sans-serif;
+}
+
+.vcarcol {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.carcolors {
+  margin-top: 10px;
+}
+
+.carcolors img {
+  width: 36px;
+  cursor: pointer;
+  border: solid 1px #ccc;
+}
+
+.speclist {
+  margin: 0;
+  padding: 0;
+}
+
+.speclist li {
+  display: block;
+  padding: 10px 0 10px 20px;
+  font-size: 16px;
+  font-family: "KIA", sans-serif;
+  cursor: pointer;
+  background: url(../images/dot.png) no-repeat left center;
+}
+
+.speclist li:hover {
+  color: #307fe2;
+}
+
+.speclist li .active {
+  color: #307fe2;
+  font-weight: 700;
+}
+
+.speclist2 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+  .speclist2 {
+    margin: 20px 0 20px 0;
+    padding: 0;
+  }
+
+  .speclist2 li {
+    display: inline;
+    background-image: none;
+  }
+
+  .speclist2 li a.active {
+    border-top: solid 2px #307fe2;
+    color: #333;
+  }
+}
+
+@media (max-width: 767px) {
+  .speclist2 li {
+    background-image: url(../images/dot.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding: 10px 0 10px 20px;
+  }
+}
+
+.speclist2 li a {
+  border-top: solid 2px;
+  border-color: transparent;
+  padding: 10px 5px;
+  margin-right: 10px;
+  font-size: 16px;
+  font-family: "KIA", sans-serif;
+  cursor: pointer;
+}
+
+.speclist2 li a.active {
+  font-weight: 700;
+}
+
+.fixed-bottom {
+  color: #fff;
+  background: #e41242;
+  text-decoration: none;
+  border-top: solid 1px #fff;
+  border-bottom: solid 1px #fff;
+}
+
+.fixed-bottom .nav-link {
+  color: #fff;
+  display: block;
+  width: 100%;
+  padding: 15px 50px;
+}
+
+.scrollmenu .nav-link {
+  color: #fff;
+}
+
+.scrollmenu .nav-link:hover {
+  color: #111;
+}
+
+.scrollmenu .nav-link.active {
+  color: #111;
+  border-bottom: dotted 0px #000000;
+}
+
+.navbar-text a.btn-dark {
+  background: #333;
+  border: solid 1px #ffffff;
+  color: #ffffff;
+}
+
+.galimg img {
+  border: solid 1px #ccc;
+  margin-bottom: 30px;
+}
+
+.booknow {
+  position: fixed;
+  bottom: 20px;
+  left: 5px;
+  z-index: 2;
+}
+
+.booknow:hover {
+  bottom: 35px;
+}
+
+.infeatures {
+  background: #fff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: solid 1px #f1f1f1;
+}
+
+.featurehead {
+  font-size: 14px;
+  max-width: 250px;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 767px) {
+  .featurehead {
+    padding-right: 15px;
+    max-width: 250px;
+  }
+}
+
+.infeatures h2 {
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  color: #307fe2;
+  margin-bottom: 20px;
+}
+
+.bannerform {
+  width: 375px;
+  padding: 10px 20px;
+  position: absolute;
+  z-index: 10000;
+  right: 25px;
+  background: url(../images/formbg.png);
+  margin-top: 30px;
+  border-radius: 5px;
+}
+
+.bannerform2 {
+  padding: 10px 20px;
+  background: #307fe2 url(../images/formbg.png);
+}
+
+.bannerform h4,
+.bannerform2 h4 {
+  padding: 10px 0px 10px 0px;
+  color: #ffffff;
+  border-top: dashed 0px #fff;
+  border-bottom: dashed 0px #fff;
+  margin-bottom: 0px;
+}
+
+.bannerform h4 strong,
+.bannerform2 h4 strong {
+  color: #000000;
+  font-weight: bolder;
+}
+
+.bannerform .form-control,
+.bannerform2 .form-control {
+  font-size: 16px;
+  border-radius: 0px;
+  border: 0;
+  margin-bottom: 10px;
+}
+
+.bannerform .submit,
+.bannerform2 .submit {
+  background: #000;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.dropdown-menu {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+.dropdown-item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #307fe2;
+  color: #ffffff;
+  border-top: solid 1px #000;
+}
+
+.carnival-style {
+  background-image: url(../kia-carnival/images/style.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carnival-luxury {
+  background-image: url(../kia-carnival/images/luxury.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carnival-performance {
+  background-image: url(../kia-carnival/images/performance.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carnival-features {
+  padding: 250px 50px 50px 50px;
+  color: #ffffff;
+}
+
+.carnival-features p {
+  color: #ffffff;
+}
+
+.videobanner {
+  position: relative;
+}
+
+.bannercontent {
+  position: absolute;
+  width: 100%;
+}
+
+.bannercontent h1 {
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding-top: 200px;
+  padding-bottom: 10px;
+  font-size: 60px;
+  font-family: "KIA", sans-serif;
+}
+
+.bannercontent h5 {
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 100px;
+}
+
+.bannercontent h5 a {
+  background: #000000;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 999px;
+}
+
+.bannercontent h6 {
+  color: #ffffff;
+  padding-top: 10px;
+}
+
+.carnivallogo {
+  width: 40%;
+  float: left;
+}
+
+.indkiacars {
+  background: #fff;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  border-top: solid 1px #f1f1f1;
+  border-bottom: solid 1px #f1f1f1;
+}
+
+.carlinks {
+  color: #fff;
+  background: #307fe2;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.carlinks:hover {
+  color: #fff;
+  background: #333333;
+  text-decoration: none;
+}
+
+.indservices {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.servicebox {
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto 30px auto;
+}
+
+.servicebox a {
+  display: block;
+  text-align: center;
+  padding: 10px 0px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.serv1 {
+  background: #0066ff;
+}
+
+.serv2 {
+  background: #009933;
+}
+
+.serv3 {
+  background: #ff9900;
+}
+
+.serv4 {
+  background: #9933cc;
+}
+
+.insuranceform {
+  background: #ffffff;
+  border: solid 1px #f0f0f0;
+  padding: 25px;
+}
+
+.insuranceform .form-control {
+  border-radius: 0px;
+  font-size: 14px;
+}
+
+.privacy {
+  padding-top: 30px;
+}
+
+.privacy h1 {
+  color: #307fe2;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.privacy p {
+  color: #333;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.privacy p strong {
+  color: #e41242;
+}
+
+.privacy p a {
+  color: #e41242;
+  text-decoration: none;
+  border-bottom: dotted 1px #e41242;
+}
+
+.privacy p a:hover {
+  color: #333333;
+  border-bottom: dotted 1px #333333;
+}
+
+.privacy h3 {
+  font-size: 28px;
+}
+
+.privacy ol {
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+
+.privacy ol li {
+  padding-left: 10px;
+  padding-bottom: 15px;
+}
+
+.privacy ol li a {
+  color: #333;
+  text-decoration: none;
+  border-bottom: dotted 1px #333333;
+}
+
+.privacy ol li a:hover {
+  color: #e41242;
+  border-bottom: dotted 1px #e41242;
+}
+
+.pptabs {
+  padding: 25px 0px 0px 0px;
+}
+
+.seltosae .item h5 {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 0 10px 0;
+}
+
+.seltosae .item p {
+  font-size: 14px;
+}
+
+.seltosae .owl-dots {
+  display: none;
+}
+
+.seltosae .owl-theme .owl-nav {
+  margin-top: -250px;
+}
+
+.seltosae .owl-prev,
+.seltosae .owl-next {
+  font-size: 28px;
+  background-color: #cccccc;
+  text-align: center;
+  border-radius: 0px;
+}
+
+.seltosae .owl-prev span,
+.seltosae .owl-next span {
+  text-align: center;
+  display: block;
+  padding-bottom: 5px;
+}
+
+.seltosae .owl-prev {
+  float: left;
+  margin-left: 20px;
+  width: 45px;
+}
+
+.seltosae .owl-next {
+  float: right;
+  width: 45px;
+}
+
+.seltosaetrim .specslider {
+  background: #ffffff;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: Muli, sans-serif;
+}
+
+.seltosaetrim .spechead {
+  background: #000000;
+  color: #ffffff;
+  font-size: 36px;
+  padding: 20px 25px;
+}
+
+.spechead .price {
+  color: #ffffff;
+}
+
+.spechead .desc {
+  color: #999999;
+}
+
+.seltosaetrim .speccolors {
+  padding: 25px 15px 15px 15px;
+}
+
+.seltosaetrim .speccolors img {
+  width: 30px;
+}
+
+.seltosaetrim .specfeatures {
+  margin-left: 25px;
+  list-style: none;
+  padding: 0;
+}
+
+.seltosaetrim .specfeatures ul {
+  list-style: none;
+  padding: 0;
+}
+
+.seltosaetrim .speclink {
+  padding-left: 25px;
+}
+
+.seltosaelogo {
+  padding-top: 10px;
+}
+
+.seltosaelogo a {
+  color: #ffffff;
+  font-size: 24px;
+  text-decoration: none;
+}
+.kiacpobg {
+  background: url(../images/cpo-carnival.jpg) no-repeat center center;
+  background-size: cover;
+  color: #ffffff;
+  padding: 200px 0px;
+}
+.kiacposell {
+  background: url(../images/cposellbg.jpg) no-repeat center center;
+  background-size: cover;
+  color: #ffffff;
+  padding: 200px 0px;
+}
+.kiacpoexchange {
+  background: url(../images/cpo-exchangebg.jpg) no-repeat center center;
+  background-size: cover;
+  color: #ffffff;
+  padding: 200px 0px;
+}
+.cpoul {
+  padding-left: 15px;
+}
+.cpoul li {
+  padding-bottom: 5px;
+}
