@@ -275,51 +275,53 @@
               </p>
             </div>
           </div>
-          <div class="col-lg-6 mt-lg-5" style="background-color: #e7e7e7;">
-            <!-- Content for the second column -->
-            <div class="contactform" style="background-color: #e7e7e7;">
-              <form id="contactForm" onsubmit="submitFormToWhatsApp(event)">
-                <input type="text" name="fname" size="40" class="form-control" placeholder="Full Name" id="fname" required />
-                <br>
-              
-                <input type="email" name="emailid" size="40" class="form-control" placeholder="Email Id" id="emailid" required />
-                <br>
-                <input type="text" name="mobile" size="40" class="form-control" placeholder="Mobile No" id="mobile" required />
-                <br>
-                <textarea id="messagebox" name="query" rows="4" class="form-control" placeholder="Enter your message"></textarea>
-                <br>
-              
-                <input name="Submit" type="submit" class="form-control submit" id="Submit" value="Submit" />
-              </form>
-              
-              <script>
-                function submitFormToWhatsApp(event) {
-                  event.preventDefault(); // Prevent the default form submission
-              
-                  // Get form data
-                  const fullName = document.getElementById("fname").value;
-                  const email = document.getElementById("emailid").value;
-                  const mobile = document.getElementById("mobile").value;
-                  const message = document.getElementById("messagebox").value;
-              
-                  // Construct the WhatsApp message
-                  const messageContent = `*New Contact Form Submission*\n\n*Full Name:* ${fullName}\n*Email:* ${email}\n*Mobile No:* ${mobile}\n*Message:* ${message}`;
-              
-                  // WhatsApp phone number (replace with your WhatsApp number)
-                  const phoneNumber = "8494813600"; // Example phone number (make sure to include country code without '+' sign)
-              
-                  // Open WhatsApp chat with pre-filled message
-                  const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(messageContent)}`;
-              
-                  // Redirect to WhatsApp
-                  window.open(whatsappLink, "_blank");
-                }
-              </script>
-              
+      <div class="col-lg-6 mt-lg-5" style="background-color: #e7e7e7;">
+  <!-- Content for the second column -->
+  <div class="contactform" style="background-color: #e7e7e7;">
+    <form id="contactForm" onsubmit="submitFormToWhatsApp(event)">
+      <input type="text" name="fname" size="40" class="form-control" placeholder="Full Name" id="fname" required />
+      <br>
+      <input type="email" name="emailid" size="40" class="form-control" placeholder="Email Id" id="emailid" required />
+      <br>
+      <input type="text" name="mobile" size="40" class="form-control" placeholder="Mobile No" id="mobile" required />
+      <br>
+      <textarea id="messagebox" name="query" rows="4" class="form-control" placeholder="Enter your message"></textarea>
+      <br>
+      <div class="col-12 col-md-6 col-lg-12" style="margin-bottom:20px;">
+        <label class="form-check-label">
+          <input type="checkbox" name="contact_auth" id="contact_auth" value="authorize" />
+          I Authorise Pixel Motors & its representatives to contact me with updates and notifications via Email/SMS/WhatsApp/Call. This will override DND/NDNC.
+        </label>
+      </div>
+      <input name="Submit" type="submit" class="form-control submit" id="Submit" value="Submit" />
+    </form>
 
-              
-            </div>
-          </div>
+    <script>
+      function submitFormToWhatsApp(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Get form data
+        const fullName = document.getElementById("fname").value;
+        const email = document.getElementById("emailid").value;
+        const mobile = document.getElementById("mobile").value;
+        const message = document.getElementById("messagebox").value;
+        const contactAuth = document.getElementById("contact_auth").checked ? "Yes" : "No";
+
+        // Construct the WhatsApp message
+        const messageContent = `*New Contact Form Submission*\n\n*Full Name:* ${fullName}\n*Email:* ${email}\n*Mobile No:* ${mobile}\n*Message:* ${message}\n*Contact Authorization:* ${contactAuth}`;
+
+        // WhatsApp phone number (replace with your WhatsApp number)
+        const phoneNumber = "8494813600"; // Example phone number (make sure to include country code without '+' sign)
+
+        // Open WhatsApp chat with pre-filled message
+        const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(messageContent)}`;
+
+        // Redirect to WhatsApp
+        window.open(whatsappLink, "_blank");
+      }
+    </script>
+  </div>
+</div>
         </div>
       </div>
     </div>
@@ -412,41 +414,44 @@
         </div>
 
         <!-- Modal body -->
-        <div class="modal-body">
-          <img height="1" width="1" style="display: none" alt="" src="ass/saved_resource" />
-          <form action="" method="post">
-            <div class="row">
-              <div class="col-12 col-md-6 col-lg-12">
-                <input type="text" name="fname" value="" size="40" class="form-control" placeholder="Full Name"
-                  id="fname" required="" />
-              </div>
-              <div class="col-12 col-md-6 col-lg-12">
-                <input type="email" name="emailid" value="" size="40" class="form-control" placeholder="Email Id"
-                  id="emailid" required="" />
-              </div>
-              <div class="col-12 col-md-6 col-lg-12">
-                <input type="text" name="mobile" value="" size="40" class="form-control" placeholder="Mobile No"
-                  id="mobile" required="" />
-              </div>
-              <div class="col-12 col-md-6 col-lg-12">
-                <select name="tatacars" class="form-control" id="car" required="">
-                  <option value="">Car Interested</option>
-                  <option value="tiago">Tiago</option>
-                  <option value="altroz">Altroz</option>
-                  <option value="tigor">Tigor</option>
-                  <option value="punch">Punch</option>
-                  <option value="nexon">Nexon</option>
-                  <option value="harrier">Harrier</option>
-                  <option value="safari">Safari</option>
-                </select>
-              </div>
-              <div class="col-12 col-md-6 col-lg-12">
-                <input name="Submit" type="submit" class="form-control submit" id="Submit" value="Submit"
-                  onclick="sendemail()" />
-              </div>
-            </div>
-          </form>
-        </div>
+       <div class="modal-body">
+  <img height="1" width="1" style="display: none" alt="" src="ass/saved_resource" />
+  <form action="" method="post">
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-12">
+        <input type="text" name="fname" value="" size="40" class="form-control" placeholder="Full Name" id="fname" required="" />
+      </div>
+      <div class="col-12 col-md-6 col-lg-12">
+        <input type="email" name="emailid" value="" size="40" class="form-control" placeholder="Email Id" id="emailid" required="" />
+      </div>
+      <div class="col-12 col-md-6 col-lg-12">
+        <input type="text" name="mobile" value="" size="40" class="form-control" placeholder="Mobile No" id="mobile" required="" />
+      </div>
+      <div class="col-12 col-md-6 col-lg-12">
+        <select name="tatacars" class="form-control" id="car" required="">
+          <option value="">Car Interested</option>
+          <option value="tiago">Tiago</option>
+          <option value="altroz">Altroz</option>
+          <option value="tigor">Tigor</option>
+          <option value="punch">Punch</option>
+          <option value="nexon">Nexon</option>
+          <option value="harrier">Harrier</option>
+          <option value="safari">Safari</option>
+        </select>
+      </div>
+      <!-- Added Checkbox -->
+      <div class="col-12 col-md-6 col-lg-12">
+        <label class="form-check-label">
+          <input type="checkbox" name="terms" id="terms" value="agree" required="" />
+          I agree to the terms and conditions
+        </label>
+      </div>
+      <div class="col-12 col-md-6 col-lg-12">
+        <input name="Submit" type="submit" class="form-control submit" id="Submit" value="Submit" onclick="sendemail()" />
+      </div>
+    </div>
+  </form>
+</div>
         <!-- Modal body END-->
       </div>
     </div>
